@@ -10,8 +10,8 @@ public class Qes1 {
         long longNum = 0L;
         float floatNum = 0.0f;
         double doubleNum = 0.0;
-        char letter = 'X';
-        String letters = "初期値";
+        char letter = '\u0000';
+        String letters = null;
         boolean isBoolean = false;
 
         // ===== 課題2：指定された値を代入 =====
@@ -30,7 +30,7 @@ public class Qes1 {
         System.out.println(byteNum + shortNum + intNum + longNum);
 
         // 20
-        System.out.println(20);
+        System.out.println(byteNum * 2);
 
         // a ハロー true
         System.out.println(letter + " " + letters + " " + isBoolean);
