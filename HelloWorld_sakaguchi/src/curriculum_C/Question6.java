@@ -16,17 +16,17 @@ public class Question6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // じゃんけん
+        // 🥊 Step1: じゃんけん対決
         playJanken(sc);
 
-        // バトル
+        // ⚔ Step2: バトル開始
         playBattle(sc);
 
         sc.close();
     }
 
     // ==============================
-    // じゃんけん
+    // 🥊 じゃんけんパート
     // ==============================
     public static void playJanken(Scanner sc) {
         System.out.println("\n=== じゃんけん対決 ===");
@@ -57,6 +57,7 @@ public class Question6 {
                        (player == 1 && cpuHand == 2) ||
                        (player == 2 && cpuHand == 0)) {
                 System.out.println("あなたの勝ち！");
+                System.out.println("=== バトル開始！ ===");
                 break;
             } else {
                 System.out.println("あなたの負け…再挑戦！");
@@ -65,7 +66,7 @@ public class Question6 {
     }
 
     // ==============================
-    // バトル
+    // ⚔ バトルパート
     // ==============================
     public static void playBattle(Scanner sc) {
         StringBuilder log = new StringBuilder();

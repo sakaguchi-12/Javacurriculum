@@ -9,7 +9,9 @@ public class Object {
 
         Scanner sc = new Scanner(System.in);
 
+        // ============================
         // ① 基本概念
+        // ============================
         System.out.println("【① 基本概念】");
         System.out.print("名前を入力してください: ");
         String inputName = sc.nextLine();
@@ -19,7 +21,9 @@ public class Object {
         emp1.work();
         System.out.println();
 
+        // ============================
         // ② クラスとオブジェクト
+        // ============================
         System.out.println("【② クラスとオブジェクト】");
         System.out.print("社員IDを入力してください: ");
         String id2 = sc.nextLine();
@@ -32,7 +36,9 @@ public class Object {
         emp2.showInfo();
         System.out.println();
 
+        // ============================
         // ③ カプセル化
+        // ============================
         System.out.println("【③ カプセル化】");
         Employee3 emp3 = new Employee3();
         emp3.setEmployeeId("E002");
@@ -40,7 +46,9 @@ public class Object {
         System.out.println("社員ID: " + emp3.getEmployeeId() + ", 名前: " + emp3.getName());
         System.out.println();
 
+        // ============================
         // ④ 継承
+        // ============================
         System.out.println("【④ 継承】");
         FullTimeEmployee4 full = new FullTimeEmployee4("E003", "佐藤太郎");
         PartTimeEmployee4 part = new PartTimeEmployee4("E004", "鈴木花子");
@@ -48,7 +56,9 @@ public class Object {
         System.out.println("パート社員の給与: " + part.calculateDailyWage(9) + " 円");
         System.out.println();
 
+        // ============================
         // ⑤ ポリモーフィズム
+        // ============================
         System.out.println("【⑤ ポリモーフィズム】");
         List<Employee5> employees5 = new ArrayList<>();
         employees5.add(new FullTimeEmployee5("F001", "山田太郎"));
@@ -61,7 +71,9 @@ public class Object {
         }
         System.out.println();
 
+        // ============================
         // ⑥ インターフェイスと抽象クラス
+        // ============================
         System.out.println("【⑥ インターフェイスと抽象クラス】");
         List<Billable> employees6 = new ArrayList<>();
         employees6.add(new FullTimeEmployee6("I001", "小林太郎"));
@@ -72,7 +84,9 @@ public class Object {
         }
         System.out.println();
 
+        // ============================
         // ⑦ SOLID設計原則
+        // ============================
         System.out.println("【⑦ SOLID原則】");
         List<Employee7> staff = new ArrayList<>();
         staff.add(new FullTimeEmployee7("高橋一郎", 8));
@@ -85,7 +99,9 @@ public class Object {
     }
 }
 
+//////////////////////////////////////////////////////
 // ① 基本概念
+//////////////////////////////////////////////////////
 class Employee1 {
     String name;
     public void work() {
@@ -93,7 +109,9 @@ class Employee1 {
     }
 }
 
+//////////////////////////////////////////////////////
 // ② クラスとオブジェクト
+//////////////////////////////////////////////////////
 class Employee2 {
     String employeeId;
     String name;
@@ -102,7 +120,9 @@ class Employee2 {
     }
 }
 
+//////////////////////////////////////////////////////
 // ③ カプセル化
+//////////////////////////////////////////////////////
 class Employee3 {
     private String employeeId;
     private String name;
@@ -112,7 +132,9 @@ class Employee3 {
     public String getName() { return name; }
 }
 
+//////////////////////////////////////////////////////
 // ④ 継承
+//////////////////////////////////////////////////////
 abstract class Employee4 {
     private String employeeId;
     private String name;
@@ -139,7 +161,9 @@ class PartTimeEmployee4 extends Employee4 {
     }
 }
 
+//////////////////////////////////////////////////////
 // ⑤ ポリモーフィズム
+//////////////////////////////////////////////////////
 abstract class Employee5 {
     protected String id;
     protected String name;
@@ -162,7 +186,9 @@ class ContractEmployee5 extends Employee5 {
     }
 }
 
+//////////////////////////////////////////////////////
 // ⑥ インターフェイスと抽象クラス
+//////////////////////////////////////////////////////
 interface Billable {
     int costForDay(int hoursWorked);
 }
@@ -186,7 +212,9 @@ class ContractEmployee6 extends Employee6 {
     public int costForDay(int hoursWorked) { return hoursWorked * 1000; }
 }
 
+//////////////////////////////////////////////////////
 // ⑦ SOLID設計原則
+//////////////////////////////////////////////////////
 interface Payable {
     int calculateSalary();
     String getName();
