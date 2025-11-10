@@ -1,21 +1,17 @@
-=== Player vs Daemon === 2025-11-06T01:19:53.560429800
-[INIT] P [HP=80, AT=14, SP=10]
+=== Player vs Daemon === 2025-11-10T23:35:16.976770700
+[INIT] p [HP=100, AT=18, SP=8]
 [INIT] Daemon [HP=85, AT=12, SP=6]
 
-[TURN ORDER] First: P
+[TURN ORDER] First: p
 
-[TURN 1] P の攻撃！ → Daemon に 14 ダメージ（残HP: 71)
-[TURN 2] Daemon の攻撃！ → P に 12 ダメージ（残HP: 68)
-[TURN 3] P の攻撃！ → Daemon に 14 ダメージ（残HP: 57)
-[TURN 4] Daemon の攻撃！ → P に 12 ダメージ（残HP: 56)
-[TURN 5] P の攻撃！ → Daemon に 14 ダメージ（残HP: 43)
-[TURN 6] Daemon の攻撃！ → P に 12 ダメージ（残HP: 44)
-[TURN 7] P の攻撃！ → Daemon に 14 ダメージ（残HP: 29)
-[TURN 8] Daemon の攻撃！ → P に 12 ダメージ（残HP: 32)
-[TURN 9] P の攻撃！ → Daemon に 14 ダメージ（残HP: 15)
-[TURN 10] Daemon の攻撃！ → P に 12 ダメージ（残HP: 20)
-[TURN 11] P の攻撃！ → Daemon に 14 ダメージ（残HP: 1)
-[TURN 12] Daemon の攻撃！ → P に 12 ダメージ（残HP: 8)
-[TURN 13] P の攻撃！ → Daemon に 14 ダメージ（残HP: 0)
+[TURN 1] p の攻撃！ → Daemon に 18 ダメージ（残HP: 67)
+[TURN 2] Daemon の攻撃！ → p に 12 ダメージ（残HP: 88)
+[TURN 3] p の攻撃！ → Daemon に 18 ダメージ（残HP: 49)
+[TURN 4] Daemon の攻撃！ → p に 12 ダメージ（残HP: 76)
+[TURN 5] p の攻撃！ → Daemon に 18 ダメージ（残HP: 31)
+[TURN 6] Daemon の攻撃！ → p に 12 ダメージ（残HP: 64)
+[TURN 7] p の攻撃！ → Daemon に 18 ダメージ（残HP: 13)
+[TURN 8] Daemon の攻撃！ → p に 12 ダメージ（残HP: 52)
+[TURN 9] p の攻撃！ → Daemon に 18 ダメージ（残HP: 0)
 
-勝者: P
+勝者: p
